@@ -36,6 +36,7 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+        <DialogTitle />
         {/* Logo */}
         <div className="mt-32 mb-8 text-center text-2xl">
           <Link href="/">
