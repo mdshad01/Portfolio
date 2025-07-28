@@ -7,21 +7,25 @@ const services = [
     num: "01",
     title: "Web Developmentt",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, optio.",
+    href: "",
   },
   {
     num: "02",
     title: "UI/UX Desiginer",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, optio.",
+    href: "",
   },
   {
     num: "03",
     title: "Logo Desiginer",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, optio.",
+    href: "",
   },
   {
     num: "04",
     title: "SEO",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, optio.",
+    href: "",
   },
 ];
 
@@ -43,7 +47,7 @@ const Services = () => {
                     {service.num}
                   </div>
                   <Link
-                    href="/"
+                    href={service.href}
                     className="w-16 h-16 rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex items-center justify-center hover:-rotate-45 ">
                     <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
