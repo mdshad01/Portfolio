@@ -15,9 +15,10 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between lg:gap-12 lg:pt-6 lg:pb-14">
             {/* text */}
             <div className="text-center lg:text-left order-2 lg:order-none flex-1">
-              <span className="text-xl">Full Stack Developer</span>
+              <span className="text-xl m-1">Full Stack Developer</span>
               <h1 className="h1 ">
-                Hello I'm <br />
+                Hello I'm
+                <br />
                 <span className="text-accent">MD Shad Alam</span>
               </h1>
               <p className="max-w-[500px] mb-9 mt-2 text-white/80">
