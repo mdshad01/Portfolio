@@ -56,14 +56,14 @@ const Work = () => {
     setProject(projects[currentIndex]);
   };
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0">
+      className="min-h-[80vh] flex flex-col justify-center py-12 lg:py-0 lg:pt-6 lg:px-0">
       <div className="container mx-auto max-w-6xl ">
         <div className="flex flex-col lg:flex-row lg:gap-[30px]">
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
+            <div className="flex flex-col gap-[25px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
               {/* Project Category */}
@@ -73,7 +73,7 @@ const Work = () => {
               {/* Project Description */}
               <p className="text-white/60">{project.description}</p>
               {/* Stack */}
-              <ul className="flex gap-4 flex-wrap">
+              <ul className="flex gap-2 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li className="text-xl text-accent" key={index}>
@@ -132,7 +132,7 @@ const Work = () => {
                       {/* image */}
                       <div className="relative w-full h-full">
                         {/* {console.log(project.image)} */}
-                        <Image src={project.image} fill className="object-cover" alt="" />
+                        <Image src={project.image} fill className="object-cover" quality={100} alt="" />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -140,14 +140,14 @@ const Work = () => {
               })}
               {/* Slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] lg: bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 
