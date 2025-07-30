@@ -174,10 +174,6 @@ const skills = {
       icon: <SiTypescript />,
       name: "typescript",
     },
-    // {
-    //   icon: <FaFigma />,
-    //   name: "figma",
-    // },
   ],
 };
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
